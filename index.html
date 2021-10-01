@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			background-image: url("fondo.jpg");
+		}
+		.letra{
+			position: absolute;
+			font-family: titulop1;
+			font-size: 600%;
+			top: 5%;
+			left: 15%;
+			-webkit-text-stroke: 2px white;
+			color: #FCC5FF;
+		}
+		.letra2{
+			position: absolute;
+			font-family: titulop2;
+			font-size: 300%;
+			top: 25%;
+			left: 16%;
+			-webkit-text-stroke: 2px white;
+			color: black;
+		}
+		.letra3{
+			position: absolute;
+			font-family: "titulop2";
+			font-size: 300%;
+			top: 25%;
+			left: 56%;
+			-webkit-text-stroke: 2px white;
+			color: black;
+		}
+		.c1{
+			position: absolute;
+			top: 40%;
+			left: 15%;
+			width: 20%;
+			height: 50%;
+			background: #A3C5D9;
+			color: white;
+			border-color: white;
+			border-style: double;
+		}
+
+		.c2{
+			position: absolute;
+			top: 65%;
+			left: 25%;
+			width: 55%;
+			height: 20%;
+			background: black;
+			color: white;
+			font-family: "titulop1";
+			font-size: 200%;
+		}
+
+		.cc2{
+			position: absolute;
+			top: 15%;
+			left: 5%;
+			width: 85%;
+			height: 10%;
+			background: white;
+			color: black;
+			font-family: "titulop3";
+			font-size: 200%;
+
+		}
+
+			.cc4{
+			position: absolute;
+			top: 35%;
+			left: 5%;
+			width: 85%;
+			height: 10%;
+			background: white;
+			color: black;
+			font-family: "titulop3";
+			font-size: 200%;
+
+		}
+
+
+		.c3{
+			position: absolute;
+			top: 40%;
+			left: 45%;
+			width: 35%;
+			height: 50%;
+			background: #DEB5BA;
+			color: white;
+			padding-top: 2px;
+			font-family: "titulop3";
+			font-size: 150%;
+		}
+
+@font-face{
+	font-family: titulop1;
+	src: url(titulo1.otf);
+}
+@font-face{
+	font-family: titulop2;
+	src: url(titulo2.otf);
+}
+@font-face{
+	font-family: titulop3;
+	src: url(titulo3.ttf);
+}
+	</style>
+</head>
+<body>
+	<div class="letra">Restaurante Mojojoi</div>
+	<div class="letra2">AGREGAR</div>
+	<div class="c1"> 
+	<form>
+		<br>
+		<input type="text" id="pro" placeholder="Ingrese el producto" class="cc2">
+		<br><br>
+		<input type="text" id="pre" placeholder="Ingrese el precio" class="cc4">
+	</form>
+	<div class="c2" id="act" onclick="acti()">Ingresar</div>
+
+	</div>
+	<div class="letra3">Menu</div>
+	<div class="c3" id="ingre"></div>
+
+	<script>
+		x=5;
+		function acti() {
+		x=x+5;
+		ag1=pro.value;
+		ag2=Number(pre.value);
+		aho=ingre.innerHTML;
+		neew=aho+ag1+" "+ag2;
+		nuevo="<div>"+neew+"</div>";
+		ingre.innerHTML=nuevo;
+		}
+	</script>
+
+</body>
+</html>
